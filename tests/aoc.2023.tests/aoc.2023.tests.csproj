@@ -23,4 +23,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\aoc.2023\aoc.2023.csproj" />
+  </ItemGroup>
+
 </Project>

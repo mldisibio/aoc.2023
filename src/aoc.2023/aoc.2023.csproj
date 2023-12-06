@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\my-functional\src\incite.functional\incite.functional.csproj" />
+  </ItemGroup>
+
 </Project>
