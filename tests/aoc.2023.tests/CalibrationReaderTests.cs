@@ -33,4 +33,39 @@ public class CalibrationReaderTests
         Assert.Equal(142, total);
     }
 
+    [Theory]
+    [InlineData("two1nine", 29)]
+    [InlineData("eightwothree", 83)]
+    [InlineData("abcone2threexyz", 13)]
+    [InlineData("xtwone3four", 24)]
+    [InlineData("4nineeightseven2", 42)]
+    [InlineData("zoneight234", 14)]
+    [InlineData("7pqrstsixteen", 76)]
+    [InlineData("eighthree", 83)]
+    [InlineData("sevenine", 79)]
+    public void FirstAndLastDigitComposer_IncludesDigitWords(string line, int expected)
+    {
+        // Arrange
+        var composer = CalibrationReader.ComposeCalibrationIncludingDigitNames;
+
+        // Act
+        int result = composer(line);
+
+        // Assert
+        Assert.Equal(expected, result);
+    }
+
+    [Fact]
+    public void SumAllCalibrationValuesIncludingDigitNames_ReturnsCorrectSum()
+    {
+        // Arrange
+        var lines = new[] { "two1nine","eightwothree","abcone2threexyz","xtwone3four","4nineeightseven2","zoneight234","7pqrstsixteen" };
+        var calculator = (IEnumerable<string> allLines) => CalibrationReader.SumAllCalibrationValues(CalibrationReader.ComposeCalibrationIncludingDigitNames, allLines);
+        // Act
+        int total = calculator(lines);
+
+        // Assert
+        Assert.Equal(281, total);
+    }
+
 }
