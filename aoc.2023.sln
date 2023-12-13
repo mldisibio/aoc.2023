@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3B2FBF45
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aoc.2023.tests", "tests\aoc.2023.tests\aoc.2023.tests.csproj", "{BB1B5872-91D9-4325-9157-23C4DF98F4F8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "incite.functional", "..\my-functional\src\incite.functional\incite.functional.csproj", "{4AD004C8-61A5-4F97-B163-776273D7473D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "incite.functional", "src\incite.functional\incite.functional.csproj", "{749FB5E2-4CD6-4CDE-BBB5-C83430DB48E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,10 @@ Global
 		{BB1B5872-91D9-4325-9157-23C4DF98F4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB1B5872-91D9-4325-9157-23C4DF98F4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB1B5872-91D9-4325-9157-23C4DF98F4F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AD004C8-61A5-4F97-B163-776273D7473D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AD004C8-61A5-4F97-B163-776273D7473D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AD004C8-61A5-4F97-B163-776273D7473D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AD004C8-61A5-4F97-B163-776273D7473D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{749FB5E2-4CD6-4CDE-BBB5-C83430DB48E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749FB5E2-4CD6-4CDE-BBB5-C83430DB48E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749FB5E2-4CD6-4CDE-BBB5-C83430DB48E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749FB5E2-4CD6-4CDE-BBB5-C83430DB48E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{44AF7575-BD9B-48B5-B0BF-217C76B3469B} = {098183DF-08CB-457E-8A87-39DE579ADC38}
 		{BB1B5872-91D9-4325-9157-23C4DF98F4F8} = {3B2FBF45-A55A-4891-82A2-EFA9352167CF}
+		{749FB5E2-4CD6-4CDE-BBB5-C83430DB48E4} = {098183DF-08CB-457E-8A87-39DE579ADC38}
 	EndGlobalSection
 EndGlobal

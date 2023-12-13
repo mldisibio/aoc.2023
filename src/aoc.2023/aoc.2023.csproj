@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\my-functional\src\incite.functional\incite.functional.csproj" />
+    <ProjectReference Include="..\incite.functional\incite.functional.csproj" />
   </ItemGroup>
 
 </Project>
